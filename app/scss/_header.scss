@@ -1,0 +1,123 @@
+.header{
+    &.open{
+		
+		.header__toggle1{
+            >span{
+                background-color: #FFFFFF;
+            }
+		>span:first-child{
+			transform: rotate(45deg);
+		}
+
+		>span:nth-child(2){
+			opacity:0;
+		}
+
+		>span:last-child{
+			transform: rotate(-45deg);
+		}
+        
+		}
+
+        .header__logo{
+            
+                background-image: url("/images/logo-wbookmark.svg");
+            
+        }
+	}
+	
+	.overlay{
+		opacity: 0;
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		z-index: 1;
+		background-image: linear-gradient($veryDarkBlueTrans, $veryDarkBlueTrans);
+	}
+    nav{
+        z-index: 5;
+        position: relative;
+        height: 9.125rem;
+    }
+    &__menu{
+        position: relative;
+        z-index: 5;
+        border-radius: 0;
+        margin: 0;
+        width: 100%;
+        padding-top: 2.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+		
+		
+    }
+    &__toggle1 {
+        //Mobile Menu
+        
+        > span {
+            display: block;
+            width: 1.125rem;
+            height: 3px;
+            background-color: $veryDarkBlue;
+            transition: all 300ms ease-in-out;
+            transform-origin: 0.04rem 0.09rem;
+
+            &:not(:last-child) {
+                margin-bottom: 3px;
+            }
+        }
+        
+    }
+
+    &__logo{
+        height: 1.5625rem;
+        position: relative;
+        z-index: 5;
+        
+            background-position: center;
+            height: 1.5625rem;
+            width: 148px;
+            border: none;
+            background-image: url("/images/logo-bookmark.svg");
+            @include breakpoint-up(large){
+                margin-right: 3.5625rem;
+            }
+        
+    }
+
+    &__links{
+        position: absolute;
+        margin-top: 2rem;
+        a{
+            border-top:1px solid #FFFFFF;
+        }
+        a:nth-child(3){
+            border-bottom:1px solid #FFFFFF;
+            margin-bottom: 1.5rem;
+        }
+
+        a:last-child{
+            border: 2px solid #FFFFFF;
+            border-radius: 10px;
+            height: 2.75rem;
+            padding-top: 0.5rem;
+        }
+    }
+    &__link{
+        display: block;
+        width: 19.3125rem;
+        height: 4.0625rem;
+        font-size: $medium;
+        font-family:  'Rubik', sans-serif;
+        color: #FFFFFF;
+        text-align: center;
+        margin-left: 2.125rem;
+        margin-right: 2.125rem;
+        padding-top: 1.1625rem;
+    }
+
+
+    
+}

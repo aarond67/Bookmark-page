@@ -243,6 +243,15 @@ a, a:visited, a:hover {
   z-index: 5;
   position: relative;
   height: 9.125rem;
+  display: block;
+}
+
+@media (min-width: 64em) {
+  .header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .header__menu1 {
@@ -254,6 +263,29 @@ a, a:visited, a:hover {
   padding-top: 2.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+@media (min-width: 64em) {
+  .header__menu1 {
+    padding-top: 3.5rem;
+  }
+}
+
+.header__menu2 {
+  min-width: 28.125rem;
+  height: 2.5rem;
+  margin-top: 3rem;
+  margin-right: 10.3125rem;
+}
+
+.header__menu2 > a {
+  margin-right: 3.125rem;
+}
+
+.header__toggle1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .header__toggle1 > span {
@@ -271,7 +303,7 @@ a, a:visited, a:hover {
   margin-bottom: 3px;
 }
 
-.header__logo {
+.header #header-img {
   height: 1.5625rem;
   position: relative;
   z-index: 5;
@@ -279,13 +311,11 @@ a, a:visited, a:hover {
   height: 1.5625rem;
   width: 148px;
   border: none;
-  background-image: url("/images/logo-bookmark.svg");
 }
 
 @media (min-width: 64em) {
-  .header__logo {
+  .header #header-img {
     margin-left: 10.6875rem;
-    background-image: url("/images/logo-bookmark.svg");
   }
 }
 
@@ -322,5 +352,28 @@ a, a:visited, a:hover {
   text-align: center;
   margin-left: 11.005%;
   padding-top: 1.1625rem;
+}
+
+.header .nav-link {
+  color: #5368df;
+}
+
+.header .nav-link:hover {
+  color: #fa5757;
+}
+
+.header #login {
+  height: 100%;
+  width: 6.9375rem;
+  background-color: #fa5757;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+.header #login:hover {
+  background-color: transparent;
+  border: 1px solid #fa5757;
+  color: #fa5757;
 }
 /*# sourceMappingURL=style.css.map */

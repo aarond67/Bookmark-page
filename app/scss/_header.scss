@@ -42,6 +42,10 @@
         z-index: 5;
         position: relative;
         height: 9.125rem;
+        display: block;
+        @include breakpoint-up(large){
+            display: flex;
+        }
     }
     &__menu1{
         position: relative;
@@ -52,12 +56,26 @@
         padding-top: 2.5rem;
         padding-left: 2rem;
         padding-right: 2rem;
+        @include breakpoint-up(large){
+            padding-top: 3.5rem;
+            
+        }
 		
 		
     }
+
+    &__menu2{
+        min-width: 28.125rem;
+        height: 2.5rem;
+        margin-top: 3rem;
+        margin-right: 10.3125rem;
+        > a {
+            margin-right: 3.125rem;
+        }
+    }
     &__toggle1 {
         //Mobile Menu
-        
+        align-self: center;
         > span {
             display: block;
             width: 1.125rem;
@@ -65,6 +83,7 @@
             background-color: $veryDarkBlue;
             transition: all 300ms ease-in-out;
             transform-origin: 0.04rem 0.09rem;
+            
 
             &:not(:last-child) {
                 margin-bottom: 3px;
@@ -73,7 +92,7 @@
         
     }
 
-    &__logo{
+    #header-img{
         height: 1.5625rem;
         position: relative;
         z-index: 5;
@@ -82,10 +101,10 @@
             height: 1.5625rem;
             width: 148px;
             border: none;
-            background-image: url("/images/logo-bookmark.svg");
+            
             @include breakpoint-up(large){
                 margin-left: 10.6875rem;
-                background-image: url("/images/logo-bookmark.svg");
+                
             }
         
     }
@@ -123,6 +142,25 @@
         padding-top: 1.1625rem;
     }
 
+    .nav-link{
+color:   hsl(231, 69%, 60%);
+    &:hover{
+    color:hsl(0, 94%, 66%);
+}
+    }
 
+    #login{
+        height: 100%;
+        width: 6.9375rem;
+        background-color: hsl(0, 94%, 66%);
+        border: none;
+        border-radius: 4px;
+        color: white;
+        &:hover{
+            background-color: transparent;
+            border: 1px solid hsl(0, 94%, 66%);
+            color: hsl(0, 94%, 66%);
+        }
+    }
     
 }

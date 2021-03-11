@@ -19,19 +19,17 @@
 <body>
   <header class="header" id = "header">
     <div class="overlay hide-for-desktop has-fade"></div>
-    <nav>
+    <nav id = "nav-bar" class = "flex flex-jc-sb">
       <div class="header__menu1 flex flex-jc-sb">
-        <a href="/" class="header__logo">
+        <img href="/" src ="/images/logo-bookmark.svg" id="header-img">
           
-          </a>
+      </img>
+      
         <a id="btnHamburger1" href="#" class="header__toggle1 hide-for-desktop ">
           <span></span>
           <span></span>
           <span></span>
         </a>
-      </div>
-      <div class = "header__menu2">
-
       </div>
       <div class = "header__links hide-for-desktop has-fade">
         <a href="#" class = "header__link">
@@ -47,6 +45,15 @@
           LOGIN
         </button>
       </div>
+      <div class = "header__menu2 hide-for-mobile flex flex-jc-sb  flex-ai-c">
+        <a href="" class = "nav-link">FEATURES</a>
+        <a href="" class = "nav-link">PRICING</a>
+        <a href="" class = "nav-link">CONTACT</a>
+        <button class = "nav-link" id = "login">
+          LOGIN
+        </button>
+      </div>
+      
     </nav>
   </header>
 

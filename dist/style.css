@@ -23,6 +23,12 @@ body.noscroll {
   overflow: hidden;
 }
 
+@media (min-width: 64em) {
+  body.noscroll {
+    overflow: visible;
+  }
+}
+
 .container {
   margin: 0 auto;
 }
@@ -105,6 +111,18 @@ body.noscroll {
 
 a, a:visited, a:hover {
   text-decoration: none;
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
 }
 
 .has-fade {
@@ -203,6 +221,12 @@ a, a:visited, a:hover {
   background-image: url("/images/logo-wbookmark.svg");
 }
 
+@media (min-width: 64em) {
+  .header.open .header__logo {
+    background-image: url("/images/logo-bookmark.svg");
+  }
+}
+
 .header .overlay {
   opacity: 0;
   position: fixed;
@@ -221,7 +245,7 @@ a, a:visited, a:hover {
   height: 9.125rem;
 }
 
-.header__menu {
+.header__menu1 {
   position: relative;
   z-index: 5;
   border-radius: 0;
@@ -260,13 +284,15 @@ a, a:visited, a:hover {
 
 @media (min-width: 64em) {
   .header__logo {
-    margin-right: 3.5625rem;
+    margin-left: 10.6875rem;
+    background-image: url("/images/logo-bookmark.svg");
   }
 }
 
 .header__links {
   position: absolute;
   margin-top: 2rem;
+  width: 82.4%;
 }
 
 .header__links a {
@@ -278,23 +304,23 @@ a, a:visited, a:hover {
   margin-bottom: 1.5rem;
 }
 
-.header__links a:last-child {
+.header__links button:last-child {
   border: 2px solid #FFFFFF;
   border-radius: 10px;
   height: 2.75rem;
-  padding-top: 0.5rem;
+  padding-top: 0.1rem;
+  background-color: transparent;
 }
 
 .header__link {
   display: block;
-  width: 19.3125rem;
+  width: 100%;
   height: 4.0625rem;
   font-size: 18px;
   font-family: 'Rubik', sans-serif;
   color: #FFFFFF;
   text-align: center;
-  margin-left: 2.125rem;
-  margin-right: 2.125rem;
+  margin-left: 11.005%;
   padding-top: 1.1625rem;
 }
 /*# sourceMappingURL=style.css.map */

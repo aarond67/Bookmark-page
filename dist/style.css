@@ -356,6 +356,8 @@ a, a:visited, a:hover {
 
 .header .nav-link {
   color: #5368df;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .header .nav-link:hover {
@@ -369,6 +371,10 @@ a, a:visited, a:hover {
   border: none;
   border-radius: 4px;
   color: white;
+  -webkit-box-shadow: 0 9px 10px rgba(83, 104, 223, 0.19);
+          box-shadow: 0 9px 10px rgba(83, 104, 223, 0.19);
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .header #login:hover {

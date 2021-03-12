@@ -144,6 +144,7 @@
 
     .nav-link{
 color:   hsl(231, 69%, 60%);
+transition: 500ms;
     &:hover{
     color:hsl(0, 94%, 66%);
 }
@@ -156,6 +157,8 @@ color:   hsl(231, 69%, 60%);
         border: none;
         border-radius: 4px;
         color: white;
+        box-shadow: 0 9px 10px hsla(231, 69%, 60%, 0.19);
+        transition: 500ms;
         &:hover{
             background-color: transparent;
             border: 1px solid hsl(0, 94%, 66%);

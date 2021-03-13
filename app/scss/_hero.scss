@@ -1,0 +1,75 @@
+.hero{
+    &__info{
+        margin-top:4.875rem; 
+        margin-left: 10.3125rem;
+        width: 30.125rem;
+        position: relative;
+        #title{
+            margin-top: 0;
+            font-size: 2.25rem;
+            color: $veryDarkBlue;
+        }
+    }
+
+    &__text{
+        font-size:$medium;
+        line-height: 1.8125rem;
+        color: $grayishBlue;
+       margin-bottom: 2.25rem;
+    }
+
+    &__button{
+        width: 10.375rem;
+        font-weight:700 ;
+       
+    }
+    #chromebtn{
+        margin-right: 1rem;
+        background-color: $softBlue;
+        color: white;
+        box-shadow: 0 9px 10px hsla(231, 69%, 60%, 0.19);
+        &:hover{
+            background-color:transparent;
+            border: 1px solid $softBlue;
+            color: $softBlue;
+        }
+    }
+
+    #firefoxbtn{
+        
+        color: $veryDarkBlue;
+        box-shadow: 0 9px 10px hsla(229, 31%, 21%, 0.19);
+        &:hover{
+            background-color:transparent;
+            border: 1px solid $veryDarkBlue;
+            
+        }
+    }
+
+    &__img1{
+        right: 2.875rem;
+        
+        z-index: 2;
+        position: absolute;
+    }
+    &__imgback{
+        position: absolute;
+        background-color: $softBlue;
+        height: 352px;
+        width: 258px;
+        top: 21rem;
+        right: 0;
+        z-index: 1;
+    }
+
+    &__imgback::before {
+        content:"" ;
+        background-color: $softBlue;
+        border-radius: 50%;
+        position: absolute;
+        width: 516px;
+        height: 352px;
+        z-index: 1;
+        right: 0;
+    } 
+}

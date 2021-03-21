@@ -46,10 +46,10 @@
         </button>
       </div>
       <div class = "header__menu2 hide-for-mobile flex flex-jc-sb  flex-ai-c">
-        <a href="" class = "nav-link">FEATURES</a>
-        <a href="" class = "nav-link">PRICING</a>
-        <a href="" class = "nav-link">CONTACT</a>
-        <button class = "nav-link button" id = "login">
+        <a href="#feature" class = "nav-link">FEATURES</a>
+        <a href="#pricing" class = "nav-link">PRICING</a>
+        <a href="#contact" class = "nav-link">CONTACT</a>
+        <button href = "#login" class = "nav-link button" id = "login">
           LOGIN
         </button>
       </div>
@@ -57,35 +57,8 @@
     </nav>
   </header>
 
- <!-- <div class = "hero flex">
-
-    <div class = "hero__info ">
-      <h1 id = "title">
-        A Simple Bookmark Manager
-      </h1>
-
-      <p class = "hero__text">
-        A clean and simple interface to organize your favourite websites. Open a new 
-        browser tab and see your sites load instantly. Try it for free.
-      </p>
-
-      <button class = "hero__button" id = "chromebtn">
-        Get it on Chrome
-      </button>
-      <button class = "hero__button" id = "firefoxbtn">
-        Get it on Firefox
-      </button>
-    </div>
-
-    <div class = "hero__imgs">
-      <img href="#" src="/images/illustration-hero.svg" class = "hero__img1">
-      <div class = "hero__imgback"></div>
-    </div>
-  </div>
--->
-
-<div class = "hero flex flex-jc-sb">
-  <div class = "hero__imgs">
+<div class = "hero flex flex-jc-sb" id = "pricing">
+  <div class = "hero__imgs" id = "contact">
     <img href="#" src="/images/illustration-hero.svg" class = "hero__img1">
    
     <div class = "hero__imgback"></div>
@@ -109,19 +82,54 @@
     </button>
   </div>
 </div>
+
+<div class = "feature" id = "feature">
+  <div class = "feature__info ">
+    <h1 class = "feature__title">Features</h1>
+    <p class = "feature__text">Our aim is to make it quick and easy for you to access your favourite websites. 
+      Your bookmarks sync between your devices so you can access them on the go.</p>
+      
+  </div>
+  
+  <div class = "feature__buttons flex">
+    <button class = "feature__button selected">Simple Bookmarking</button> 
+    <button class = "feature__button ">Speedy Searching</button>
+    <button class = "feature__button ">Easy Sharing</button>
+  </div>
+  <div class="feature__parts flex " id = "show">
+    <img src="images/illustration-features-tab-1.svg"  id = "tab1" alt="" class="feature__imgs">
+    <div class="feature__backgrds"></div>
+    <div class="feature__partsinfo">
+      <h1 class="feature__titles">Bookmark in one click</h1>
+      <p class="feature__texts">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+        gives you complete control over how you manage your favourite sites.</p>
+        <button class="feature__btninfo hide-for-mobile">More Info</button>
+    </div>
+  </div>
+  <div class="feature__parts flex no-show"id = "tab2-part">
+    <img src="images/illustration-features-tab-2.svg" id = "tab2" alt="" class="feature__imgs">
+    <div class="feature__backgrds"></div>
+    <div class="feature__partsinfo " id ="tab2-text">
+      <h1 class="feature__titles">Intelligent search</h1>
+      <p class="feature__texts" >Our powerful search feature will help you find saved sites in no time at all. 
+        No need to trawl through all of your bookmarks.</p>
+        <button class=" feature__btninfo hide-for-mobile">More Info</button>
+    </div>
+  </div>
+  <div class="feature__parts flex no-show" id = "tab3-part">
+    <img src="images/illustration-features-tab-3.svg" id = "tab3"alt="" class="feature__imgs">
+    <div class="feature__backgrds"></div>
+    <div class="feature__partsinfo" id = "tab3-text">
+      <h1 class="feature__titles">Share your bookmarks</h1>
+      <p class="feature__texts" >Easily share your bookmarks and collections with others. Create a shareable 
+        link that you can send at the click of a button.</p>
+        <button class=" feature__btninfo hide-for-mobile">More Info</button>
+    </div>
+  </div>
+</div>
+<!--margin of the next section will hit the bottom of the image not the blue-->
 <!--
-  Features
-  Pricing
-  Contact
-  Login
-
-  A Simple Bookmark Manager
-
-  A clean and simple interface to organize your favourite websites. Open a new 
-  browser tab and see your sites load instantly. Try it for free.
-
-  Get it on Chrome
-  Get it on Firefox
+ 
 
   Features
 

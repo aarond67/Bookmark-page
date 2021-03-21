@@ -1,0 +1,262 @@
+.feature{
+    padding-left: 32px;
+    padding-right: 32px;
+    @include breakpoint-up(large){
+        padding: 0;
+    }
+    &__info{
+        text-align: center;
+        margin-top: 157px;
+        margin-bottom: 47px;
+        @include breakpoint-up(large){
+            margin-top: 94px;
+            margin-bottom: 65px;
+            padding-left: 453px;
+            padding-right:453px ;
+        }
+        
+    }
+    &__title{
+        font-size: 32px;
+        color: #252b46;
+         
+            color: $veryDarkBlue;
+            @include breakpoint-up(large){
+                margin-top: 0;
+            font-size: 2.25rem;
+            color: $veryDarkBlue;
+            }
+        
+    }
+    &__text{
+        font-size: 15px;
+        line-height: 25px;
+        color: #9194a1;
+        @include breakpoint-up(large){
+            font-size: 18px;
+        }
+    }
+    &__buttons{
+        flex-direction: column;
+        
+        @include breakpoint-up(large){
+            flex-direction: row;
+            padding-left: 356px;
+            padding-right: 356px;
+        }
+        button{
+            border-top:1px solid $grayishBlue;
+            border-radius: 0;
+            @include breakpoint-up(large){
+                border-top: 0;
+                border-bottom: 1px solid $grayishBlue;
+            }
+        }
+        button:nth-child(3){
+            border-bottom:1px solid $grayishBlue ;
+        }
+    }
+
+    &__button{
+        background-color:transparent;
+        width: 100%;
+        height: 57px;
+        
+    }
+
+    .selected{
+        
+            position: relative;
+            
+         
+            transition: color 300ms ease-in-out;
+            
+            
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 5px;
+                left: 0;
+                right: 0;
+                bottom: 1px;
+                background: $softRed;
+                
+                transition: opacity 300ms ease-in-out;
+                width: 25%;
+                margin-left: 37%;
+                @include breakpoint-up(large){
+                    width: 100%;
+                    margin:0;
+                    bottom: 0;
+                }
+            }
+
+    }
+
+    &__parts{
+        margin-top: 72px;
+        position: relative;
+        flex-direction: column;
+        
+       @include breakpoint-up(large){
+           flex-direction: row;
+          margin-bottom: 88px; 
+       }
+    }
+
+    &__imgs{
+        width: 82.933333333333333333333333333333vw;
+        height: 53.6vw;
+        
+
+    @include breakpoint-up(large){
+        width: 37.222222222222222222222222222222vw;
+        height:24.027777777777777777777777777778vw ;
+        margin-left: 11.736111111111111111111111111111vw;
+    }
+    }
+
+    &__backgrds{
+        position: absolute;
+        z-index: -1;
+        left: -32px;
+        width: 41.066666666666666666666666666667vw;
+        height:54.133333333333333333333333333333vw ;
+        top:35px;
+        background-color: $softBlue;
+        @include breakpoint-up(large){
+            width: 22.222222222222222222222222222222vw;
+            height: 24.444444444444444444444444444444vw;
+            top:83px;
+        }
+        &::before{
+            content:"" ;
+        background-color: $softBlue;
+        border-radius: 40%;
+        position: absolute;
+        width: 82.133333333333333333333333333333vw;
+        height: 54.133333333333333333333333333333vw;
+        
+        z-index: -1;
+        left: 0;
+        @include breakpoint-up(large){
+            width:44.444444444444444444444444444444vw;
+            height: 24.444444444444444444444444444444vw;
+        }
+    }
+    }
+
+    &__partsinfo{
+        margin-top: 86px;
+        text-align:center;
+
+        @include breakpoint-up(large){
+            text-align: left;
+            margin-left: 08.75vw;
+            margin-right: 12.361111111111111111111111111111vw;
+           
+                
+            
+        }
+    }
+
+    &__titles{
+        margin-top:0;
+        font-size: 32px;
+            color: $veryDarkBlue;
+            @include breakpoint-up(large){
+                margin-top: 0;
+            font-size: 2.25rem;
+            color: $veryDarkBlue;
+            }
+    }
+
+    &__texts{
+        font-size:15px;
+        line-height: 25px;
+        color: $grayishBlue;
+            @include breakpoint-up(large){
+                font-size: 18px;
+            }
+        
+    }
+
+    #tab2{
+        height: 66.4vw;
+        width: 86vw;
+        position: relative;
+        
+        @include breakpoint-up(large){
+            width: 33.194444444444444444444444444444vw;
+            height: 28.888888888888888888888888888889vw;
+            margin-left: 16.944444444444444444444444444444vw;
+           
+        }
+    }
+
+    #tab2-part{
+        @include breakpoint-up(large){
+            margin-bottom: 18px;
+        }
+    }
+
+    #tab2-text{
+        margin-top: 66px;
+        @include breakpoint-up(large){
+           margin-left: 7.5vw;
+           margin-right: 12.291666666666666666666666666667vw;
+        }
+    }
+
+    #tab3{
+        height:58.666666666666666666666666666667vw;
+       width: 82.933333333333333333333333333333vw;
+        position: relative;
+       left:0;
+        @include breakpoint-up(large){
+            width: 30.555555555555555555555555555556vw;
+            height: 26.388888888888888888888888888889vw;
+            margin-left: 16.944444444444444444444444444444vw;
+            
+        }
+        
+    }
+    #tab3-part{
+        @include breakpoint-up(large){
+            margin-bottom: 54px;
+        }
+    }
+
+    #tab3-text{
+        @include breakpoint-up(large){
+            margin-left: 10.138888888888888888888888888889;
+        }
+    }
+
+    &__btninfo{
+        background-color: $softBlue;
+        width: 114px;
+        height: 48px;
+        color: white;
+
+        &:hover{
+            background-color:transparent;
+            border: 1px solid $softBlue;
+            color: $softBlue;
+        }
+    }
+
+    .no-show{
+        visibility: hidden;
+        height: 0;
+        margin: 0  !important;
+    }
+
+    .show{
+        visibility: visible;
+        height: 100%;
+        margin-top: 72px ;
+    }
+}

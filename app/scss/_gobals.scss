@@ -30,6 +30,13 @@ button{
     border-radius: 4px;
     transition: 500ms;
     height: 3rem;
+    min-width: 6.9375rem;
+    font-size: 12px; 
+    font-weight:700 ; 
+    transition: 500ms;
+        &:hover{
+            background-color: transparent;
+        }
 }
 
 //Spacing
@@ -123,5 +130,26 @@ a,a:visited, a:hover{
     // hide for desktop viewport widths
     @include breakpoint-up(large){
         display:none;
+    }
+}
+
+h1{
+    font-size: 32px;
+    color: #252b46;
+
+    @include breakpoint-up(large){
+        font-size: 2.25rem;
+        color: #252b46;   
+    }
+}
+
+p{
+    font-size: 15px;
+    line-height: 25px;
+    color: #9194a1;
+    @include breakpoint-up(large){
+        font-size: 18px;
+        line-height: 1.8125rem;
+        color: #9194a1;
     }
 }
